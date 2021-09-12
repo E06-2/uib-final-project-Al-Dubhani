@@ -16,6 +16,8 @@ body {
     align-items: center;
 }
 
+/* ----- Menu ----- */
+
 .menu {
     background-color: #fff;
     margin-top: 20px;
@@ -48,7 +50,6 @@ body {
 }
 
 a,
-button,
 i,
 .menu-item,
 .menu-item i {
@@ -58,11 +59,12 @@ i,
 }
 
 a:hover,
-button:hover,
 i:hover{
     background-color: #157ace;
     color: white;
 }
+
+/* ----- Profile ----- */
 
 .img-profile {
     position: relative;
@@ -70,8 +72,8 @@ i:hover{
     background-size: cover;
     min-height: 350px;
     background-position: 0 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .profile {
@@ -136,7 +138,7 @@ i:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .main {
@@ -149,6 +151,18 @@ i:hover{
     -webkit-overflow-scrolling: touch;
 }
 
+/*----- Scroll Styling ----- */
+
+body ::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #157ace;
+    border-radius: 10px;
+    border: 2px solid cyan;
+}
+
 /* ----- About Me ----- */
 
 .title {
@@ -159,7 +173,7 @@ i:hover{
     text-transform: capitalize;
     width: 100%;
     border-bottom: 1px solid #ddd;
-}
+} 
 
 .title span {
     color: #157ace;
@@ -223,6 +237,46 @@ i:hover{
     line-height: 20px;
 }
 
+/* ----- Gallery ----- */
+
+.asset-body.grid {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: flex-start;
+}
+
+.gallery-item {
+    width: 200px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.gallery-item .img-content,
+.gallery-item img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+ 
+.gallery-item:hover img {
+    transform: scale(1.5);
+}
+
+.project-name {
+    text-align: center;
+    font-size: .9em;
+    transition: transform 0.5s;
+}
+
+.project-name:hover {
+    font-weight: bold;
+    color: #157ace;
+}
+
+
 /* ----- RESPONSIVENESS ----- */
 
 @media (max-width: 1100px) {
@@ -278,6 +332,16 @@ i:hover{
     .split .asset-body {
         grid-template-columns: 1fr;
     }
+
+    .menu-item {
+        width: 80px;
+        height: 50px;
+    }
+
+    .asset-body.grid {
+        justify-content: center;
+    }
+
 }
 
 ::selection{
