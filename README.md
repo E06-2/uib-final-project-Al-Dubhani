@@ -11,6 +11,10 @@ I made my Website in a very simple way with out many effects or many colors, I j
 
 In the second version of my profile Website I will add some simple effects and also link it with some of the projects which I worked in.
 
+## Content
+
+In my profile Website I have seven sections which are (About, Education, Works, Skills, Gallery, profile, and main). In the work section I share just short information which is the main information related to my work position and all other inormation about my work experinces and my training and activities are in my CV which is available for download from the profile section, and also there is a contact page.
+
 ## Authors
 
 - [@fawziAl-Dubhani](https://www.github.com/Al-Dubhani)
