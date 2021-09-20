@@ -16,7 +16,7 @@ body {
     align-items: center;
 }
 
-/* ----- Menu ----- */
+/* ----- Menu Bar ----- */
 
 .menu {
     background-color: #fff;
@@ -59,7 +59,7 @@ i,
 }
 
 a:hover,
-i:hover{
+i:hover {
     background-color: #157ace;
     color: white;
 }
@@ -195,12 +195,6 @@ body ::-webkit-scrollbar {
     grid-template-columns: 1fr 1fr;
 }
 
-/* .item {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-} */
-
 .item label {
     border: 1px solid;
     color: #157ace;
@@ -248,7 +242,7 @@ body ::-webkit-scrollbar {
 }
 
 .gallery-item {
-    width: 200px;
+    width: 380px;
     margin: 20px;
     cursor: pointer;
 }
@@ -259,10 +253,23 @@ body ::-webkit-scrollbar {
     position: relative;
     overflow: hidden;
     transition: transform 0.5s;
+    border-radius: 3%;
 }
  
-.gallery-item:hover img {
+/* .img-content:hover img {
     transform: scale(1.5);
+} */
+
+.image-resize {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-resize-2 {
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .project-name {
@@ -272,10 +279,10 @@ body ::-webkit-scrollbar {
 }
 
 .project-name:hover {
+    font-size: 1em;
     font-weight: bold;
     color: #157ace;
 }
-
 
 /* ----- RESPONSIVENESS ----- */
 
